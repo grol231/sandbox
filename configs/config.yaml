@@ -1,0 +1,20 @@
+rabbitmq:
+  host: rmq18-prod-slon.sl.netlo
+  port: 5672
+  user: shinkevich
+  password: RANDOM_STRING
+  queue: sms
+
+api:
+  url: https://lk.zagruzka.com/Starline_http
+  service_id: Starline_http
+  pass: RANDOM_STRING
+  source: StarLine
+
+server:
+  port: 8080
+  metrics_path: /metrics
+
+logging:
+  level: info
+  format: json
