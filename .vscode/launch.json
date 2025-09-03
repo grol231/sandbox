@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch StarLine Worker",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/cmd/worker",
+            "env": {},
+            "args": [
+                "-config=${workspaceFolder}/configs/config.yaml"
+            ],
+            "showLog": true,
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug StarLine Worker",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/worker",
+            "env": {},
+            "args": [
+                "-config=${workspaceFolder}/configs/config.yaml"
+            ],
+            "showLog": true,
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "dlvFlags": ["--check-go-version=false"]
+        }
+    ]
+}
